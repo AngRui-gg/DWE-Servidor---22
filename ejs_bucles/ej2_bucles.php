@@ -44,8 +44,8 @@
         {
             $resultado = $num * $i;
             echo "<tr>";
-            echo "<td>" . $num . " x " . $i . "</td>";
-            echo "<td>" . $resultado . "</td>";
+            echo "<td> $num  x $i </td>";
+            echo "<td> $resultado </td>";
             echo "</tr>";
         }
         print "<br>";
