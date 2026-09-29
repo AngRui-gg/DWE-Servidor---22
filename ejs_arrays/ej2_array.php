@@ -85,6 +85,7 @@ Programa 2
             foreach($temperaturas as $temp)
             {
                 if($temp>$media)
+                    $encima++;
             }
 
         ?>
