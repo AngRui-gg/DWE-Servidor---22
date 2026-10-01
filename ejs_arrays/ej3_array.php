@@ -39,7 +39,7 @@ Programa 3
                 if ($i%2 == 0)
                 {
                     $sumaPosPar= $array[$i]+$sumaPosPar;
-                    $numPar = $numPar++;
+                    $numPar++;
                 }
                 if($array[$i]>$mayorValorPar)
                 {
@@ -53,7 +53,7 @@ Programa 3
                 if ($i%2 != 0)
                 {
                     $sumaPosImpar= $array[$i]+$sumaPosImpar;
-                    $numImpar = $numImpar++;
+                    $numImpar++;
                 }
                 if($array[$i]>$mayorValorImpar)
                 {
@@ -63,6 +63,49 @@ Programa 3
 
             //MEDIA DE AMBOS GRUPOS
             $media = ($sumaPosPar + $sumaPosImpar)/count($array);
+
+            //MOSTRAR DATOS EN UNA TABLA
+            print "<table border=1>";
+            print "<tr>";
+            print "<th>   </th>";
+            print "<th> Par </th>";
+            print "<th> Impar </th>";
+            print "<th> Otro </th>";
+            print "</tr>";
+
+            //posición pares e impares
+            print "<tr>";
+            print "<th> Posicion </th>";
+            print "<th> $sumaPosPar </th>";
+            print "<th> $sumaPosImpar </th>";
+            print "<th> - </th>";
+            print "</tr>";
+
+            //media de ambos grupos
+            print "<tr>";
+            print "<th> Media </th>";
+            print "<th> - </th>";
+            print "<th> - </th>";
+            print "<th> $media </th>";
+            print "</tr>";
+
+            //mayor valor de cada grupo
+            print "<tr>";
+            print "<th> Mayor valor </th>";
+            print "<th> $mayorValPar </th>";
+            print "<th> $mayorValImpar </th>";
+            print "<th> - </th>";
+            print "</tr>";
+
+            //numero de valores
+            print "<tr>";
+            print "<th> Numero de valores </th>";
+            print "<th> $numPar </th>";
+            print "<th> $numImpar </th>";
+            print "<th>". count($array). "</th>";
+            print "</tr>";
+
+
 
             var_dump ($array);
             print ("<br> La suma en las posiciones pares es: $sumaPosPar <br>");
