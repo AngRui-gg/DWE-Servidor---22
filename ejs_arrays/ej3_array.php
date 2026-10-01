@@ -34,7 +34,7 @@ Programa 3
             }
 
             //SUMA DE LAS POSICIONES PARES Y MAYOR NUM
-            for ($i=0; $i<=count($array); $i++)
+            for ($i=0; $i<count($array); $i++)
             {
                 if ($i%2 == 0)
                 {
@@ -76,34 +76,36 @@ Programa 3
             //posición pares e impares
             print "<tr>";
             print "<th> Posicion </th>";
-            print "<th> $sumaPosPar </th>";
-            print "<th> $sumaPosImpar </th>";
-            print "<th> - </th>";
+            print "<td> $sumaPosPar </td>";
+            print "<td> $sumaPosImpar </td>";
+            print "<td> - </td>";
             print "</tr>";
 
             //media de ambos grupos
             print "<tr>";
             print "<th> Media </th>";
-            print "<th> - </th>";
-            print "<th> - </th>";
-            print "<th> $media </th>";
+            print "<td> - </td>";
+            print "<td> - </td>";
+            print "<td> $media </td>";
             print "</tr>";
 
             //mayor valor de cada grupo
             print "<tr>";
             print "<th> Mayor valor </th>";
-            print "<th> $mayorValPar </th>";
-            print "<th> $mayorValImpar </th>";
-            print "<th> - </th>";
+            print "<td> $mayorValorPar </td>";
+            print "<td> $mayorValorImpar </td>";
+            print "<td> - </td>";
             print "</tr>";
 
             //numero de valores
             print "<tr>";
             print "<th> Numero de valores </th>";
-            print "<th> $numPar </th>";
-            print "<th> $numImpar </th>";
-            print "<th>". count($array). "</th>";
+            print "<td> $numPar </td>";
+            print "<td> $numImpar </td>";
+            print "<thd>". count($array). "</td>";
             print "</tr>";
+
+            print"</table>";
 
 
 
