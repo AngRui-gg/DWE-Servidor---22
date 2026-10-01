@@ -45,21 +45,24 @@ Programa 2
                 else
                 {
                     $diferenciaNum = $temp - $anterior;
-                    if $diferenciaNum>0
+                    if ($diferenciaNum>0)
+                    {
                         $diferencia = "+$diferenciaNum";
+                    }
                     else 
+                    {
                         $diferencia=$diferenciaNum;
+                    }
                 }
 
                 echo "<tr>";
                 echo "<td> $dias </td>";
                 echo "<td> $temp </td>";
                 echo "<td> $diferencia </td>";
-                echo "<tr>"
+                echo "<tr>";
 
                 //TEMP MAX Y MIN
-                if($temp>$max)
-                {
+                if($temp>$max){
                     $max=$temp;
                     $diaMax = $dias;
                 }
