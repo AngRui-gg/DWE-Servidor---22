@@ -9,12 +9,12 @@
 <h2>Operaciones con ficheros</h2>
 
 <form name='fichero5' action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method='post'>
-    <p>Fichero (Ruta/nombre): *
+    <p>Fichero (Ruta/nombre):
         <input type="text" name="fichero">
     </p>
 
     <p>Operaciones:</p>
-    <p><input type="radio" name="operacion" value="fichero" checked> Mostrar fichero</p>
+    <p><input type="radio" name="operacion" value="fichero"> Mostrar fichero</p>
     <p><input type="radio" name="operacion" value="linea"> Mostrar línea
         <input type="number" name="num_linea" value="1">
     </p>
