@@ -45,3 +45,19 @@ function leer_fichero($nomFichero) {
 }
 ?>
 
+
+<!--
+HECHO
+is_empty
+is_null
+comprobar_obligatorios
+
+
+
+f_ride -> leer ficheros ver diferencia file_put_content
+
+
+HECHO
+meter # entre los elementos-->
+
+

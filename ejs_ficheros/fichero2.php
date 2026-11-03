@@ -1,7 +1,7 @@
 <HTML>
 
 <HEAD>
-    <TITLE> Fichero 2 </TITLE>
+    <TITLE> FICHERO 2</TITLE>
 </HEAD>
 
 <BODY>
@@ -38,7 +38,7 @@
 
 <?php
 
-require_once 'funciones.php'; // carga las funciones
+require_once 'funciones.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -59,20 +59,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-
-
-<!--
-HECHO
-is_empty
-is_null
-comprobar_obligatorios
-
-
-
-f_ride -> leer ficheros ver diferencia file_put_content
-
-
-HECHO
-meter # entre los elementos-->
-
 

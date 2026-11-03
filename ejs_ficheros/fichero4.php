@@ -19,7 +19,7 @@
 
     foreach ($lineas as $linea) {
         if (trim($linea) != "") { //mira si hay texto aún, si hay entra y si no hay, la ignora y pasa a la siguiente
-        $campos = explode("##", $linea); //LO QUE CAMBIA RESPECTO AL ANTERIOR
+        $campos = explode("##", $linea); //cambios------
         //Lo que hace es guardar en el array $campos lo que encuentra ($campos[0] nombre, $campos[1] apellido) después de cada ## en $linea (que es quien tiene guardado lo que hay en el fichero)
         
         $nombre = $campos[0];
